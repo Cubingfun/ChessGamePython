@@ -1,5 +1,5 @@
 def validateInput(file, rank):
-    if(int(rank) < 1 or int(rank) > 8):
+    if(int(rank) < 1 or int(rank) > 8 or str(rank).isnumeric() == False):
         print('rank not valid')
         return False
     if(str(file).isalpha() == False or len(str(file)) > 1 or file > 'h'):
