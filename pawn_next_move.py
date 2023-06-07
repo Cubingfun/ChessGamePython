@@ -10,13 +10,13 @@ def nextmove_pawn(file, rank, color):
     if(validateInput(file, rank) == False):
         print('Invalid input \n\n')
         return
-    ##Calcs for ranks
+    #Calcs for ranks
     newrank = [rank]
     pos_str = ''
     newfile = file
     newpiece = 'pawn'
     promotionPieces =  ['Q', 'B', 'R', 'N']
-    print(color + " pawn now at " + file + str(rank))
+    #print(color + " pawn now at " + file + str(rank))
     if rank == 2 and color == 'white': # white pawn first move
         newrank = [rank + 1, rank + 2]
     elif rank == 7 and color == 'black': # black pawn first move
